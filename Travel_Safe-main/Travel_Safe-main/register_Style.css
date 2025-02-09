@@ -1,0 +1,53 @@
+body {
+  background-image: url("/images/Map_bg.jpg");
+background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  header {
+    background-color: rgb(63, 46, 131);;
+    padding: 15px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  .register{
+    padding: 50px;
+    text-align: center;
+    color: rgb(63, 46, 131);
+    
+  } 
+  .register h3 {
+    font-size: 28px;
+    color: rgb(63, 46, 131);
+  }
+  .register form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .register input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .register button {
+    background-color: rgb(63, 46, 131);;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }

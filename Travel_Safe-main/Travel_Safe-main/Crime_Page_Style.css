@@ -1,0 +1,123 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    /* background-color: black; */
+    background-image: url("/images/Map_bg.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.body_div{
+    display: flex;
+
+}
+.center-box {
+    width: 90%;
+    width: 520px;
+    max-width: 400px;
+    height: 530px;
+    margin: 20px 0;
+    position: relative;
+    /* background-color: white; */
+}
+
+.animated-border-box, .animated-border-box-glow {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.animated-border-box-glow {
+    filter: blur(20px);
+}
+
+.animated-border-box:before, .animated-border-box-glow:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 99999px;
+    height: 99999px;
+    background-image: conic-gradient(rgba(0, 0, 0, 0), #1976ed, rgba(0, 0, 0, 0) 25%);
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    100% {
+        transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+
+.animated-border-box:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: white; 
+    border-radius: 7px;
+}
+
+.box-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 20px;
+    color: blue;
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 10px #34ce57;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 20px #28a745;
+}
+
+.button-container {
+    margin: 10px 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1976ed;
+    color:greenyellow;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #145bb5;
+}
+
+table {
+    width: 100%;
+    margin-top: 10px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #07bae2;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
