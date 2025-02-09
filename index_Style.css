@@ -1,0 +1,196 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color:whitesmoke;
+  }
+  
+  header {
+    background-color: rgb(63, 46, 131); 
+    padding: 15px;
+    text-align: center;
+    position: relative;
+  }
+  
+  header h1 {
+    font-size: 36px;
+    color: white;
+    margin: 0;
+  }
+  
+  nav {
+    margin-top: 10px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+  }
+  
+  .auth-buttons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .auth-buttons button {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 15px;
+    margin-left: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.features .feature {
+    width: 30%; /* Adjust the width as needed */
+    text-align: center;
+    transition: transform 0.2s ease; /* Add transition for hover effect */
+}
+
+.features .feature img {
+    width: 80%; /* Makes the images responsive */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow effect */
+}
+
+.features .feature:hover {
+    transform: scale(1.08); /* Slightly enlarges the image on hover */
+}
+
+.features h3 {
+    font-size: 24px;
+    color: #008080;
+}
+
+.features p {
+    font-size: 16px;
+}
+
+
+  /* Hero Section */
+  .hero {
+    background-image: url('hero-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .hero-content {
+    z-index: 1;
+  }
+  
+  .hero h2 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  .cta-btn {
+    background-color: #ff6f61;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-btn:hover {
+    background-color: #e65a50;
+  }
+
+  /* Core Features Section */
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    background-color: #ffffff;
+  }
+  
+  .features .feature {
+    width: 30%;
+    text-align: center;
+  }
+  
+  .features h3 {
+    font-size: 24px;
+    color: #008080;
+  }
+  
+  .features p {
+    font-size: 16px;
+  }
+  
+  /* About Us Section */
+  .about {
+    background-color: black;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .about h3 {
+    color: #ff6f61;
+    font-size: 28px;
+  }
+  
+  .about p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgb(63, 46, 131);
+    padding: 20px;
+    text-align: center;
+    color: white;
+  }
+  
+  footer a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  /* Animations */
+  nav a:hover, footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .features .feature:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+  
