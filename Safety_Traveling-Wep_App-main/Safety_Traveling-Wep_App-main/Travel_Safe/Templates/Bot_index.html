@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Assistant</title>
+    <link rel="stylesheet" href="/Travel_Safe/Styles Files/Bot_Style.css">
+</head>
+<body>
+    <!-- Bot Section -->
+    <div id="container">
+        <div id="bot" class="neutral">
+            <div id="head">
+                <div id="left-ear"></div>
+                <div id="face">
+                    <div id="eyes">
+                        <div id="left-eye"></div>
+                        <div id="right-eye"></div>
+                    </div>
+                    <div id="mouth"></div>
+                </div>
+                <div id="right-ear"></div>
+            </div>
+        </div>
+        <ul id="switches">
+            <li onmouseover="setStatus('')"> Neutral </li>
+            <li onmouseover="setStatus('speaking')"> Speaking </li>
+            <li onmouseover="setStatus('thinking')"> Thinking </li>
+            <li onmouseover="setStatus('listening')"> Listening </li>
+            <li onmouseover="setStatus('computing')"> Computing </li>
+        </ul>
+    </div>
+
+    <!-- Chat Section -->
+    <div id="chat-container">
+        <div id="chat-box">
+            <div id="messages"></div>
+        </div>
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-btn">Send</button>
+        <button id="speak-btn">🎤</button>
+    </div>
+
+    <script src="/Travel_Safe/Scripting Files/Bot_Script.js"></script>
+</body>
+</html>
